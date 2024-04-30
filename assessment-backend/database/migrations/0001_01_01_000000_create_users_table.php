@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('phone_number')->unique();
-            $table->string('file_path')->nullable();
+            $table->string('file_path');
             $table->timestamps();
         });
 
